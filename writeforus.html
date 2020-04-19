@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="nav-container bg-white" id="nav">
+<div class="close-nav">
+	<a href="#" id="close-nav"><i class="fas fa-times"></i></a>
+</div>
+
+	<ul class="nav">
+		<a href="index.html#featured"><li> Featured Posts</li></a>
+		<a href="shop.html"><li> Shop</li></a>
+		<a href="blog.html"><li> Blogs</li></a>
+		<a href="writeforus.html"><li> Write for Us</li></a>
+		<a href="aboutus.html"><li> About us</li></a>
+	</ul>
+
+</div>
+
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-1 side-nav bg-white">
+			<div class="menu-holder">
+				<a href="#" id="call-nav"><i class="fas fa-bars"></i></a>
+			</div>
+			<div class="logo-holder text-center">
+				<div class="logo-holder-image">
+					<img src="img/logo.png">
+				</div>
+				<div class="logo-holder-text">
+					Curly
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-11 bg-light main-body">
+
+			<section>
+			<div class="container">
+					<div class="row">
+					<div class="col-lg-12">
+						<div class="section-header">
+							<h1>Write For Us</h1>
+							<h2>Your point of view matters to us</h2>
+						</div>
+					</div>
+					<div class="col-lg-12">
+					<div class="row">
+					<div class="col-lg-7 split-desc">
+						<p>
+							Yes, you. We’re always looking for new authors. If you’ve got an idea that will challenge our readers and move our industry forward, we want to hear about it. But you don’t need to wait for an idea that will redefine web design. Just aim to bring readers a fresh perspective on a topic that’s keeping you up at night.
+							<br>
+							<br>
+							We’ll be honest, though: writing for Curly takes work. We want your article to be at its best, and we’ll push you to get there. Once accepted, you’ll get extensive feedback from our team, and you’ll work closely with an editor on revisions.
+							<br>
+							<br>
+							It’s also rewarding. Thousands of your peers (and potential employers, clients, or publishers) will read your work, and you’ll also learn a lot in the process—about communicating your ideas, about writing, and even about the topic you thought you already knew so well when you started.
+						</p>
+					</div>
+					<div class="col-lg-5 split-desc">
+						<div class="about-img-holder">
+							<img src="img/gamer.png">
+						</div>
+					</div>
+					</div>
+					</div>
+					</div>
+					</div>
+			</section>
+<footer class="footer">
+	<div class="footer-nav-container">
+		<ul class="footer-nav">
+			<li><a href="#"> Index</a></li>
+			<li><a href="#"> Featured Post</a></li>
+			<li><a href="#"> Shop Now</a></li>
+			<li><a href="#"> Trending Posts</a></li>
+			<li><a href="#"> Write for us</a></li>
+		</ul>
+		<div class="clear"></div>
+	</div>
+</footer>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>
+$(function() {
+    var header = $(".side-nav-img-cont");
+    var header1 = $(".side-nav-image");
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+    
+        if (scroll >= 550) {
+            header.addClass("side-nav-img-cont-scrolled");
+        } else {
+            header.removeClass("side-nav-img-cont-scrolled");
+        }
+		
+    });
+});
+</script><script>
+$('document').ready(function() {
+    $('#call-nav').click(function(e) {
+        e.preventDefault();
+       if( $('#nav').hasClass('nav-notactive'))
+	   {
+	   $('#nav').addClass('nav-active');
+	   $('#nav').removeClass('nav-notactive');
+		}else if( $('#nav').hasClass('nav-active'))
+		{
+		 $('#nav').removeClass('nav-active');
+		 $('#nav').addClass('nav-notactive');
+		}
+		else
+		{
+		 $('#nav').addClass('nav-active');
+		}
+    });
+});
+</script>
+</script><script>
+$('document').ready(function() {
+    $('#close-nav').click(function(e) {
+        e.preventDefault();
+		 $('#nav').removeClass('nav-active');
+		 $('#nav').addClass('nav-notactive');
+		
+    });
+});
+</script>
+</body>
+</html>
